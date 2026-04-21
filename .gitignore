@@ -1,0 +1,5 @@
+zyo-env/
+*.o
+__pycache__/
+scx/
+vmlinux.h
