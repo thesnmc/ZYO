@@ -55,3 +55,32 @@ nohup.out
 .idea/
 .DS_Store
 Thumbs.db
+
+# =========================
+# 7. TELEMETRY & DATA BANKS (CRITICAL)
+# =========================
+# Never push your local machine's hardware stats or network logs!
+*.csv
+zyo_training_data_v3.csv
+
+# =========================
+# 8. CRASH DUMPS & PANICS
+# =========================
+# If the C code segfaults or Rust panics, Linux might dump memory here
+core
+core.*
+*.crash
+
+# =========================
+# 9. EDITOR TEMP FILES
+# =========================
+# Vim/Emacs/Nano background swap files
+*.swp
+*.swo
+*~
+
+# =========================
+# 10. LOCAL LLM ARTIFACTS
+# =========================
+# Just in case you ever download raw model weights directly to the folder
+*.gguf
