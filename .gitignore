@@ -1,5 +1,57 @@
-zyo-env/
+# =========================
+# 1. RUST & CARGO
+# =========================
+target/
+**/*.rs.bk
+# Note: Cargo.lock is typically checked in for binary projects to ensure reproducible builds, 
+# but target/ MUST be ignored to prevent pushing compiled Rust artifacts.
+
+# =========================
+# 2. C & eBPF ARTIFACTS
+# =========================
 *.o
-__pycache__/
-scx/
+*.bpf.o
 vmlinux.h
+scx/
+compile_commands.json
+.clangd/
+
+# =========================
+# 3. PYTHON & ENVIRONMENTS
+# =========================
+zyo-env/
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# =========================
+# 4. AI MODELS & HEAVY DEPS
+# =========================
+# Ignore the 2GB C++ engine and its zip files
+libtorch/
+libtorch-*.zip
+*.zip
+
+# Ignore Neural Network weights (Use Git LFS or a download link in README for these)
+*.pth
+*.pt
+*.onnx
+
+# =========================
+# 5. SECRETS & LOGS
+# =========================
+.env
+*.log
+nohup.out
+
+# =========================
+# 6. OS & IDE JUNK
+# =========================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
