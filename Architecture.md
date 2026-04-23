@@ -1,5 +1,5 @@
 # 🏗️ Architecture & Design Document: ZYO Agentic OS & Ring-0 Firewall
-**Version:** 3.0.0 | **Date:** 2026-04-22 | **Author:** TheSNMC
+**Version:** 3.0.0 | **Date:** 2026-04-22 | **Author:** Sujay
 
 ---
 
